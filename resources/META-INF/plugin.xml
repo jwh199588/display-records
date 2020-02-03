@@ -1,0 +1,39 @@
+<idea-plugin>
+  <id>com.cn.jwh.displayRecords</id>
+  <name>displayRecords</name>
+  <version>1.0</version>
+  <vendor email="1262466460@qq.com">jiawnehao</vendor>
+
+  <description><![CDATA[
+      In the process of work, we need to record the work tasks,<br>
+      but often can't remember them, <br>
+      so we need a text tool to record and prompt us
+    ]]></description>
+
+  <change-notes><![CDATA[
+      if you have any comments to me, please call me<br>
+      <em>1.0.1</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+      <toolWindow id="J Notes"
+                canCloseContents="false"
+                factoryClass="main.com.cn.jwh.toolwindow.GuiToolWindowBar"
+                anchor="right"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
